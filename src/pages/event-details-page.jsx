@@ -3,7 +3,7 @@ import { useParams, useNavigate, useLocation, Link } from 'react-router-dom';
 import { eventsData } from '../utils/data';
 import { Calendar, MapPin, Tag, Map, ArrowLeft } from 'lucide-react';
 import ShareableLink from '../components/EventDetails/ShareableLink';
-import {getEventById, getVenueForEvent} from './../utils'
+import {getEventById, getVenueForEvent} from './../utils/data'
 
 
 const EventDetailsPage = () => {
