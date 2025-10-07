@@ -94,22 +94,22 @@ const Header = () => {
           >
             <nav className="flex flex-col space-y-2 pb-4">
               {navItems.map(({ path, label, icon: Icon }, index) => (
-                <button
-                  key={path}
-                  onClick={() => handleNavClick(path)}
-                  style={{ transitionDelay: isMenuOpen ? `${index * 50}ms` : '0ms' }}
-                  className={`flex items-center gap-3 px-4 py-3 rounded-lg font-medium transition-all duration-200 ${
-                    isActive(path)
-                      ? 'bg-white text-indigo-700 shadow-md scale-105'
-                      : 'text-indigo-100 hover:bg-indigo-600 hover:translate-x-2 hover:shadow-sm active:scale-95'
-                  }`}
-                >
-                  <Icon className="w-5 h-5" />
-                  {label}
-                  {isActive(path) && (
-                    <span className="ml-auto w-2 h-2 bg-indigo-700 rounded-full animate-pulse" />
-                  )}
-                </button>
+                        <Link
+                            to={path}
+                            onClick={() => handleNavClick(path)}
+                            style={{ transitionDelay: isMenuOpen ? `${index * 50}ms` : '0ms' }}
+                            className={`flex items-center gap-3 px-4 py-3 rounded-lg font-medium transition-all duration-200 ${
+                                isActive(path)
+                                ? 'bg-white text-indigo-700 shadow-md scale-105'
+                                : 'text-indigo-100 hover:bg-indigo-600 hover:translate-x-2 hover:shadow-sm active:scale-95'
+                            }`}
+                            >
+                            <Icon className="w-5 h-5" />
+                            {label}
+                            {isActive(path) && (
+                                <span className="ml-auto w-2 h-2 bg-indigo-700 rounded-full animate-pulse" />
+                            )}
+                        </Link>
               ))}
             </nav>
           </div>
