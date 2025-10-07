@@ -1,4 +1,5 @@
 import { Calendar, Clock, MapPin } from "lucide-react";
+import { Link } from "react-router-dom";
 const EventCard = ({event}) => {
     return (
         <div 
@@ -50,9 +51,11 @@ const EventCard = ({event}) => {
                 <span className="text-2xl font-bold text-indigo-700">
                 {event.price}
                 </span>
-                <button className="px-4 py-2 bg-indigo-700 text-white rounded-lg font-medium hover:bg-indigo-800 hover:shadow-md transition-all duration-200">
-                View Details
-                </button>
+                <Link to={`/events/${event.id}`}>
+                    <button className="px-4 py-2 bg-indigo-700 text-white rounded-lg font-medium hover:bg-indigo-800 hover:shadow-md transition-all duration-200">
+                        View Details
+                    </button>
+                </Link>
             </div>
             </div>
         </div>
