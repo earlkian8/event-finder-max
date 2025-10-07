@@ -36,8 +36,7 @@ const Header = () => {
       }`}>
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between">
-            <button 
-              onClick={() => handleNavClick('/')}
+            <Link to={'/'}
               className="text-2xl font-bold hover:scale-105 transition-transform duration-200 flex items-center gap-2 focus:outline-none"
             >
               <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center shadow-md hover:shadow-lg transition-shadow">
@@ -46,7 +45,7 @@ const Header = () => {
               <span className="bg-gradient-to-r from-white to-indigo-100 bg-clip-text text-transparent">
                 SpotMax
               </span>
-            </button>
+            </Link>
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex space-x-1">
