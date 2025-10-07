@@ -11,43 +11,19 @@ const EventsPage = () => {
 
   const {
     // applied
-    search,
-    type,
-    month,
-    near,
-    from,
-    to,
+    search, type, month, near, from, to,
 
     // drafts
-    searchDraft,
-    setSearchDraft,
-    typeDraft,
-    setTypeDraft,
-    monthDraft,
-    setMonthDraft,
-    nearDraft,
-    setNearDraft,
-    fromDraft,
-    setFromDraft,
-    toDraft,
-    setToDraft,
+    searchDraft, setSearchDraft, typeDraft, setTypeDraft, monthDraft, setMonthDraft, nearDraft, setNearDraft, fromDraft, setFromDraft, toDraft, setToDraft,
 
     // UI
-    showFilters,
-    setShowFilters,
+    showFilters, setShowFilters,
 
     // handlers
-    handleSubmit,
-    handleSearchSubmit,
-    handleClear,
+    handleSubmit, handleSearchSubmit, handleClear,
 
     // applied setters
-    setSearch,
-    setType,
-    setMonth,
-    setNear,
-    setFrom,
-    setTo,
+    setSearch, setType, setMonth, setNear, setFrom, setTo,
 
     // results
     filteredEvents,
