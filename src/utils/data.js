@@ -90,3 +90,22 @@ export const cities = [
   "Austin",
   "Portland"
 ];
+
+export const getEventById = (id) => {
+  const num = Number(id);
+  return eventsData.find((e) => e.id === num);
+};
+
+export const getVenueForEvent = (id) => {
+  const ev = getEventById(id);
+  if (!ev) return undefined;
+  return {
+    name: ev.venue,
+    city: ev.city,
+    address: ev.venue,
+    capacity: 5000,
+  };
+};
+
+// default export kept for backward compatibility
+export default getEventById;
