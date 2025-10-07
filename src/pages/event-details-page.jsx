@@ -43,7 +43,7 @@ const EventDetailsPage = () => {
   const shareableUrl = `${window.location.origin}/events/${id}${location.search}`;
 
   return (
-    <div className="px-4 sm:px-6 lg:px-8 py-8">
+    <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-white to-purple-50 pt-20 px-4 sm:px-6 lg:px-8 py-8">
       <div className="mb-6">
         <Link to={`/events${location.search}`} className="inline-flex items-center text-indigo-600 hover:text-indigo-800">
           <ArrowLeft className="h-4 w-4 mr-1" />
