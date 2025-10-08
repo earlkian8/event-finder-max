@@ -1,173 +1,162 @@
 export const eventsData = [
   {
     id: 1,
-    title: "Sinulog Festival 2025",
-    description: "Celebrate Cebu’s grandest festival with vibrant street dancing, colorful parades, and live performances.",
-    date: "2025-01-19",
-    time: "8:00 AM",
-    city: "Cebu City",
-    venue: "Cebu City Sports Center",
-    type: "festival",
-    price: "Free",
-    image: "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800",
-    lat: 10.3157,
-    lon: 123.8854
+    title: "Summer Music Festival 2025",
+    description: "Join us for an unforgettable weekend of live music featuring top artists from around the world.",
+    date: "2025-07-15",
+    time: "6:00 PM",
+    city: "Los Angeles",
+    venue: "Hollywood Bowl",
+    type: "concert",
+    price: "$89",
+    image: "https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=800"
   },
   {
     id: 2,
-    title: "Manila Tech Summit 2025",
-    description: "The country’s biggest technology conference featuring AI, fintech, and startup innovation sessions.",
-    date: "2025-07-22",
+    title: "Tech Conference 2025",
+    description: "The biggest tech conference of the year featuring AI, blockchain, and future tech innovations.",
+    date: "2025-09-20",
     time: "9:00 AM",
-    city: "Manila",
-    venue: "SMX Convention Center",
+    city: "San Francisco",
+    venue: "Moscone Center",
     type: "tech",
-    price: "₱2,500",
-    image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800",
-    lat: 14.5336,
-    lon: 120.9822
+    price: "$299",
+    image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800"
   },
   {
     id: 3,
-    title: "Philippine Marathon 2025",
-    description: "Join thousands of runners for the annual marathon event promoting health and fitness across Metro Manila.",
-    date: "2025-03-09",
-    time: "5:00 AM",
-    city: "Taguig",
-    venue: "Bonifacio Global City",
+    title: "Marathon Championship",
+    description: "Annual city marathon with participants from all over the country. Run for charity and personal achievement.",
+    date: "2025-05-10",
+    time: "7:00 AM",
+    city: "New York",
+    venue: "Central Park",
     type: "sports",
-    price: "₱800",
-    image: "https://images.unsplash.com/photo-1502810190503-830027b8a1ce?w=800",
-    lat: 14.5535,
-    lon: 121.0497
+    price: "$45",
+    image: "https://images.unsplash.com/photo-1486218119243-13883505764c?w=800"
   },
   {
     id: 4,
-    title: "Art Fair Philippines 2025",
-    description: "Discover the best of modern and contemporary Philippine visual art from top local galleries.",
-    date: "2025-02-23",
-    time: "10:00 AM",
-    city: "Makati",
-    venue: "The Link Carpark",
+    title: "Art & Wine Festival",
+    description: "Experience local artists and wineries in this beautiful outdoor festival celebrating creativity.",
+    date: "2025-08-12",
+    time: "4:00 PM",
+    city: "Napa Valley",
+    venue: "Vineyard Estates",
     type: "art",
-    price: "₱350",
-    image: "https://images.unsplash.com/photo-1545235617-9465d2a55698?w=800",
-    lat: 14.5539,
-    lon: 121.0234
+    price: "$65",
+    image: "https://images.unsplash.com/photo-1560717789-0ac7c58ac90a?w=800"
   },
   {
     id: 5,
-    title: "Startup PH Pitch Day",
-    description: "Watch innovative Filipino startups pitch their ideas to investors and business leaders.",
-    date: "2025-05-15",
-    time: "1:00 PM",
-    city: "Quezon City",
-    venue: "Ateneo de Manila University",
+    title: "Startup Pitch Competition",
+    description: "Watch innovative startups pitch their ideas to top investors for funding opportunities.",
+    date: "2025-06-05",
+    time: "2:00 PM",
+    city: "Austin",
+    venue: "Convention Center",
     type: "business",
     price: "Free",
-    image: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=800",
-    lat: 14.6397,
-    lon: 121.0782
+    image: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=800"
   },
   {
     id: 6,
-    title: "Davao Food & Coffee Expo",
-    description: "Enjoy local delicacies, coffee tastings, and culinary workshops from top Mindanao chefs.",
-    date: "2025-09-14",
-    time: "11:00 AM",
-    city: "Davao City",
-    venue: "SMX Convention Center Davao",
+    title: "Food & Beer Expo",
+    description: "Taste the best local craft beers and gourmet food from top chefs in the region.",
+    date: "2025-10-18",
+    time: "12:00 PM",
+    city: "Portland",
+    venue: "Expo Center",
     type: "food",
-    price: "₱250",
-    image: "https://images.unsplash.com/photo-1565958011705-44e211f9327d?w=800",
-    lat: 7.0847,
-    lon: 125.6123
+    price: "$35",
+    image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800"
   }
 ];
 
 export const venuesData = [
   {
     id: 1,
-    name: "Cebu City Sports Center",
-    address: "Osmeña Blvd",
-    city: "Cebu City",
-    type: "Festival Grounds",
-    capacity: 15000,
+    name: "Hollywood Bowl",
+    address: "2301 N Highland Ave",
+    city: "Los Angeles",
+    type: "Concert Hall",
+    capacity: 17500,
     rating: 4.8,
-    description: "Main venue for Cebu’s Sinulog Festival and major sports events. Located in the heart of the city.",
-    image: "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800",
-    amenities: ["Parking", "Food Stalls", "Public Seating", "Stage Area"],
-    yearEstablished: 1994
+    description: "An iconic outdoor amphitheater known for its distinctive band shell and stunning acoustics. The Hollywood Bowl has been the summer home of the Los Angeles Philharmonic since 1922.",
+    image: "https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=800",
+    amenities: ["Parking", "Food & Beverages", "Accessible Seating", "VIP Lounges"],
+    yearEstablished: 1922
   },
   {
     id: 2,
-    name: "SMX Convention Center",
-    address: "Seashell Ln, Mall of Asia Complex",
-    city: "Manila",
+    name: "Moscone Center",
+    address: "747 Howard St",
+    city: "San Francisco",
     type: "Conference Center",
-    capacity: 18000,
+    capacity: 22000,
     rating: 4.6,
-    description: "The largest convention and exhibition center in Metro Manila, hosting tech and trade events.",
-    image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800",
-    amenities: ["WiFi", "Air Conditioning", "Catering", "Meeting Rooms"],
-    yearEstablished: 2007
+    description: "The largest convention and exhibition complex in San Francisco, hosting major tech conferences, trade shows, and corporate events. State-of-the-art facilities with modern technology.",
+    image: "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=800",
+    amenities: ["WiFi", "Exhibition Halls", "Meeting Rooms", "Catering Services"],
+    yearEstablished: 1981
   },
   {
     id: 3,
-    name: "Bonifacio Global City",
-    address: "Taguig City",
-    city: "Taguig",
-    type: "Open Grounds",
-    capacity: 20000,
-    rating: 4.7,
-    description: "A modern commercial district ideal for marathons, concerts, and outdoor festivals.",
-    image: "https://images.unsplash.com/photo-1502810190503-830027b8a1ce?w=800",
-    amenities: ["Open Space", "Parking", "Public Transport Access", "Shops Nearby"],
-    yearEstablished: 2003
+    name: "Central Park",
+    address: "Central Park West & 5th Ave",
+    city: "New York",
+    type: "Stadium",
+    capacity: 50000,
+    rating: 4.9,
+    description: "An urban park in Manhattan, offering 843 acres of scenic landscapes. Perfect venue for marathons, outdoor concerts, and large-scale public events in the heart of NYC.",
+    image: "https://images.unsplash.com/photo-1486218119243-13883505764c?w=800",
+    amenities: ["Open Air", "Scenic Routes", "Multiple Entry Points", "Public Facilities"],
+    yearEstablished: 1857
   },
   {
     id: 4,
-    name: "The Link Carpark",
-    address: "Ayala Center",
-    city: "Makati",
-    type: "Exhibit Hall",
+    name: "Vineyard Estates",
+    address: "1234 Silverado Trail",
+    city: "Napa Valley",
+    type: "Arena",
     capacity: 3000,
-    rating: 4.5,
-    description: "A multi-level space in Makati transformed annually into an art hub during Art Fair Philippines.",
-    image: "https://images.unsplash.com/photo-1545235617-9465d2a55698?w=800",
-    amenities: ["Air Conditioning", "Security", "Parking", "Accessibility"],
-    yearEstablished: 2013
+    rating: 4.7,
+    description: "A luxurious estate venue nestled among rolling vineyards, perfect for wine festivals, art exhibitions, and elegant outdoor gatherings with breathtaking valley views.",
+    image: "https://images.unsplash.com/photo-1560717789-0ac7c58ac90a?w=800",
+    amenities: ["Wine Tasting", "Outdoor Space", "Gourmet Catering", "Parking"],
+    yearEstablished: 1995
   },
   {
     id: 5,
-    name: "Ateneo de Manila University",
-    address: "Katipunan Ave, Loyola Heights",
-    city: "Quezon City",
+    name: "Convention Center",
+    address: "500 E Cesar Chavez St",
+    city: "Austin",
     type: "Conference Center",
-    capacity: 8000,
-    rating: 4.7,
-    description: "One of the Philippines’ top universities, often used for academic and startup pitch events.",
+    capacity: 12000,
+    rating: 4.5,
+    description: "A premier convention facility in downtown Austin featuring flexible meeting spaces, modern technology infrastructure, and convenient access to the city's vibrant entertainment district.",
     image: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=800",
-    amenities: ["WiFi", "AV Equipment", "Auditoriums", "Cafeterias"],
-    yearEstablished: 1859
+    amenities: ["WiFi", "AV Equipment", "Breakout Rooms", "On-site Dining"],
+    yearEstablished: 1992
   },
   {
     id: 6,
-    name: "SMX Convention Center Davao",
-    address: "SM Lanang Premier, JP Laurel Ave",
-    city: "Davao City",
+    name: "Expo Center",
+    address: "2060 N Marine Dr",
+    city: "Portland",
     type: "Conference Center",
-    capacity: 10000,
-    rating: 4.6,
-    description: "A premier events venue in Mindanao known for food expos, conventions, and trade fairs.",
-    image: "https://images.unsplash.com/photo-1565958011705-44e211f9327d?w=800",
-    amenities: ["Catering", "WiFi", "Air Conditioning", "Parking"],
-    yearEstablished: 2012
-  }
+    capacity: 8000,
+    rating: 4.4,
+    description: "Portland's premier exposition facility featuring versatile spaces for trade shows, food festivals, and community events. Modern amenities with easy access to downtown.",
+    image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800",
+    amenities: ["Parking", "Loading Docks", "Kitchen Facilities", "Outdoor Space"],
+    yearEstablished: 2000
+  },
+
 ];
 
 export const eventTypes = [
-  "festival",
+  "concert",
   "tech",
   "sports",
   "art",
@@ -176,12 +165,12 @@ export const eventTypes = [
 ];
 
 export const cities = [
-  "Cebu City",
-  "Manila",
-  "Taguig",
-  "Makati",
-  "Quezon City",
-  "Davao City"
+  "Los Angeles",
+  "San Francisco",
+  "New York",
+  "Napa Valley",
+  "Austin",
+  "Portland"
 ];
 
 export const getEventById = (id) => {
@@ -197,8 +186,6 @@ export const getVenueForEvent = (id) => {
     city: ev.city,
     address: ev.venue,
     capacity: 5000,
-    lat: ev.lat,
-    lon: ev.lon,
   };
 };
 
@@ -212,4 +199,5 @@ export const getEventsForVenue = (venueId) => {
   return eventsData.filter((e) => e.venueId === num);
 };
 
+// default export kept for backward compatibility
 export default getEventById;
