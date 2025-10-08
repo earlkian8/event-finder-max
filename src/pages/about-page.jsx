@@ -26,36 +26,21 @@ const AboutPage = () => {
   const teamMembers = [
     {
       name: 'Earl Kian Bancayrin',
-      role: 'Full Stack Developer',
+      role: 'Lead Software Developer',
       image: '/src/assets/member1.jpg', 
       bio: 'Passionate about creating seamless user experiences and scalable solutions.',
-      socials: {
-        github: '#',
-        linkedin: '#',
-        email: 'member1@unisync.com'
-      }
     },
     {
       name: 'Cydrick Amparan',
-      role: 'UI/UX Designer & Developer',
+      role: 'UI/UX Designer & Business Analyst',
       image: '/src/assets/member2.jpg', 
       bio: 'Combines design thinking with technical expertise to craft beautiful interfaces.',
-      socials: {
-        github: '#',
-        linkedin: '#',
-        email: 'member2@unisync.com'
-      }
     },
     {
       name: 'Jenson Canones',
-      role: 'Frontend Developer',
+      role: 'Software Developer',
       image: '/src/assets/member3.jpg', 
       bio: 'Specializes in creating responsive user interfaces and enhancing the overall user experience.',
-      socials: {
-        github: '#',
-        linkedin: '#',
-        email: 'member3@unisync.com'
-      }
     }
   ];
 
@@ -157,30 +142,6 @@ const AboutPage = () => {
                   <h3 className="text-xl font-bold text-gray-800 mb-1">{member.name}</h3>
                   <p className="text-indigo-600 font-medium mb-3">{member.role}</p>
                   <p className="text-gray-600 mb-4">{member.bio}</p>
-                  
-                  <div className="flex gap-3">
-                    <a 
-                      href={member.socials.github}
-                      className="p-2 bg-gray-100 rounded-lg hover:bg-gray-200 transition-colors"
-                      aria-label="GitHub"
-                    >
-                      <Github className="w-5 h-5 text-gray-700" />
-                    </a>
-                    <a 
-                      href={member.socials.linkedin}
-                      className="p-2 bg-gray-100 rounded-lg hover:bg-gray-200 transition-colors"
-                      aria-label="LinkedIn"
-                    >
-                      <Linkedin className="w-5 h-5 text-gray-700" />
-                    </a>
-                    <a 
-                      href={`mailto:${member.socials.email}`}
-                      className="p-2 bg-gray-100 rounded-lg hover:bg-gray-200 transition-colors"
-                      aria-label="Email"
-                    >
-                      <Mail className="w-5 h-5 text-gray-700" />
-                    </a>
-                  </div>
                 </div>
               </div>
             ))}
