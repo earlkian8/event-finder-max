@@ -1,25 +1,38 @@
 import React from 'react';
-import { Sparkles, Users, Target, Heart, Award, Calendar, MapPin, Shield, Rocket, Eye, Flag, Github, Linkedin, Mail } from 'lucide-react';
+import { Sparkles, Users, Target, Heart, Award, Calendar, MapPin, Shield, Rocket, Eye, Flag, TrendingUp, Zap, CheckCircle, Globe, Clock, Star, MessageCircle } from 'lucide-react';
 
 const AboutPage = () => {
-  const visionMissionGoals = [
+  const stats = [
+    { value: '10K+', label: 'Active Users', icon: Users },
+    { value: '500+', label: 'Events Listed', icon: Calendar },
+    { value: '200+', label: 'Verified Venues', icon: MapPin },
+    { value: '98%', label: 'Satisfaction', icon: Star }
+  ];
+
+  const features = [
     {
-      icon: Eye,
-      title: 'Our Vision',
-      description: 'To create accessible, ethical, and practical technology that keeps people in sync, fosters unity, and transforms everyday challenges into opportunities.',
-      color: 'from-blue-500 to-indigo-600'
+      icon: Shield,
+      title: 'Bank-Level Security',
+      desc: 'Military-grade encryption protects every transaction',
+      color: 'bg-blue-500'
     },
     {
-      icon: Target,
-      title: 'Our Mission',
-      description: 'UniSync Labs designs seamless, intuitive software by blending creativity with technical excellence, empowering businesses and individuals through innovation, collaboration, and ethical technology',
-      color: 'from-indigo-500 to-purple-600'
+      icon: Zap,
+      title: 'Instant Booking',
+      desc: 'Confirm your spot in under 60 seconds',
+      color: 'bg-purple-500'
     },
     {
-      icon: Flag,
-      title: 'Our Goals',
-      description: 'UniSync Labs strives to create reliable, user-friendly, and high-quality software that meets client needs and exceeds expectations. The company values continuous improvement, teamwork, and responsible technology that benefits both people and the environment.',
-      color: 'from-purple-500 to-pink-600'
+      icon: CheckCircle,
+      title: 'Verified Quality',
+      desc: 'Every venue manually reviewed by our team',
+      color: 'bg-green-500'
+    },
+    {
+      icon: MessageCircle,
+      title: '24/7 Support',
+      desc: 'Real humans ready to help anytime',
+      color: 'bg-pink-500'
     }
   ];
 
@@ -27,148 +40,172 @@ const AboutPage = () => {
     {
       name: 'Earl Kian Bancayrin',
       role: 'Lead Software Developer',
-      image: '/src/assets/member1.jpg', 
-      bio: 'Passionate about creating seamless user experiences and scalable solutions.',
+      image: '/src/assets/member1.jpg',
+      color: 'bg-blue-500'
     },
     {
       name: 'Cydrick Amparan',
       role: 'UI/UX Designer & Business Analyst',
-      image: '/src/assets/member2.jpg', 
-      bio: 'Combines design thinking with technical expertise to craft beautiful interfaces.',
+      image: '/src/assets/member2.jpg',
+      color: 'bg-purple-500'
     },
     {
       name: 'Jenson Canones',
       role: 'Software Developer',
-      image: '/src/assets/member3.jpg', 
-      bio: 'Specializes in creating responsive user interfaces and enhancing the overall user experience.',
+      image: '/src/assets/member3.jpg',
+      color: 'bg-indigo-500'
     }
   ];
 
+  const timeline = [
+    { phase: 'Vision', desc: 'World\'s most trusted event & venue platform', icon: Eye, color: 'bg-blue-500' },
+    { phase: 'Mission', desc: 'Seamlessly connect people with unforgettable experiences', icon: Target, color: 'bg-purple-500' },
+    { phase: 'Goals', desc: 'Innovation, growth, and exceptional user satisfaction', icon: Flag, color: 'bg-pink-500' }
+  ];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-white to-purple-50 pt-20">
       <div className="w-full px-4 sm:px-6 lg:px-8 py-8">
         {/* Hero Section */}
-        <div className="relative mb-16 text-center">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-indigo-100 text-indigo-700 rounded-full text-sm font-medium mb-4">
-            <Sparkles className="w-4 h-4" />
-            <span>About SpotMax</span>
-          </div>
-          
-          <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-indigo-700 via-indigo-600 to-purple-600 bg-clip-text text-transparent mb-4">
-            Your Gateway to Amazing Experiences
-          </h1>
-          
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            SpotMax is your trusted companion for discovering and booking incredible events 
-            and venues worldwide. We believe every moment deserves to be extraordinary.
-          </p>
-        </div>
-
-        {/* UniSync Description Section */}
-        <div className="mb-16 bg-white rounded-2xl shadow-lg p-8 md:p-12 border border-gray-100">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6 text-center">
-              What is UniSync?
-            </h2>
-            <p className="text-lg text-gray-600 text-center leading-relaxed mb-6">
-              UniSync Labs is a software development company dedicated to creating innovative and
-              user-friendly solutions. We bring together a team of skilled individuals with diverse backgrounds,
-              working collaboratively to design and deliver software that is both reliable and seamless. At UniSync
-              Labs, every project is an opportunity to grow, improve, and make a meaningful impact on the users we
-              serve.
+        <div className="relative mb-8 overflow-hidden rounded-3xl bg-white p-8 md:p-12 shadow-lg border border-gray-200">
+          <div className="text-center">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/20 text-indigo-700 rounded-full text-sm font-medium mb-4">
+              <Sparkles className="w-4 h-4" />
+              <span>About SpotMax</span>
+            </div>
+            
+            <h1 className="text-5xl md:text-7xl font-black bg-gradient-to-r from-indigo-700 via-indigo-600 to-purple-600 bg-clip-text text-transparent mb-4">
+              Your Gateway to<br />
+              Amazing Experiences
+            </h1>
+            
+            <p className="text-xl text-gray-700 max-w-3xl mx-auto mb-6">
+              Discover, book, and experience the world's best events and venues—all in one powerful platform
             </p>
-            <p className="text-lg text-gray-600 text-center leading-relaxed">
-              UniSync Labs stands for teamwork, coordination, and innovation. The company values collaboration and 
-              continuous learning to ensure smooth workflows and high-quality results. Its focus on experimentation 
-              and improvement helps drive creativity and technical growth. UniSync Labs develops user-friendly and 
-              efficient software tailored to specific needs. The company's mission is to deliver excellent 
-              solutions while helping its team and products grow together.
-            </p>
-          </div>
-        </div>
 
-        {/* Vision, Mission & Goals Section */}
-        <div className="mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
-            Our Purpose & Direction
-          </h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {visionMissionGoals.map((item, index) => {
-              const IconComponent = item.icon;
-              return (
-                <div key={index} className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
-                  <div className={`w-16 h-16 bg-gradient-to-r ${item.color} rounded-lg flex items-center justify-center mb-4`}>
-                    <IconComponent className="w-8 h-8 text-white" />
+            {/* Stats Grid */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
+              {stats.map((stat, i) => {
+                const Icon = stat.icon;
+                return (
+                  <div key={i} className="bg-white rounded-2xl p-4 hover:shadow-lg transition-all border border-gray-200">
+                    <Icon className="w-6 h-6 text-indigo-600 mx-auto mb-2" />
+                    <div className="text-3xl font-black text-indigo-900">{stat.value}</div>
+                    <div className="text-sm text-gray-600">{stat.label}</div>
                   </div>
-                  <h3 className="text-xl font-bold text-gray-800 mb-3">{item.title}</h3>
-                  <p className="text-gray-600 leading-relaxed">{item.description}</p>
-                </div>
-              );
-            })}
+                );
+              })}
+            </div>
           </div>
         </div>
 
-        {/* Development Team Section */}
-        <div className="mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-4">
-            Meet Our Development Team
-          </h2>
-          <p className="text-lg text-gray-600 text-center mb-12 max-w-3xl mx-auto">
-            The brilliant minds behind UniSync, dedicated to creating the best quality management experience.
-          </p>
-          
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {teamMembers.map((member, index) => (
-              <div key={index} className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:scale-105">
-                <div className="relative w-full h-64 bg-gradient-to-br from-indigo-400 to-purple-500 overflow-hidden">
-                  {/* Fallback icon (shown when no image) */}
+        {/* Two Column Layout - About + Timeline */}
+        <div className="grid md:grid-cols-5 gap-6 mb-8">
+          {/* What is SpotMax */}
+          <div className="md:col-span-3 bg-white rounded-3xl p-6 shadow-lg border border-gray-200">
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-12 h-12 bg-indigo-500 rounded-xl flex items-center justify-center">
+                <Rocket className="w-6 h-6 text-white" />
+              </div>
+              <h2 className="text-3xl font-black text-indigo-900">What is SpotMax?</h2>
+            </div>
+            <p className="text-gray-700 leading-relaxed mb-3">
+              <strong className="text-gray-900">SpotMax</strong> is the ultimate event discovery and venue booking platform that transforms how people find and book amazing experiences. From sold-out concerts to exclusive workshops, from corporate conferences to intimate gatherings—we bring them all together.
+            </p>
+            <p className="text-gray-600 leading-relaxed">
+              Built on cutting-edge technology with a user-first philosophy, SpotMax combines powerful search, real-time availability, secure payments, and verified listings. We're not just a booking platform—we're your trusted companion for creating unforgettable memories.
+            </p>
+            
+            {/* Quick Features */}
+            <div className="grid grid-cols-2 gap-3 mt-6">
+              <div className="flex items-center gap-2 text-gray-700">
+                <CheckCircle className="w-5 h-5 text-green-500" />
+                <span className="text-sm font-medium">Instant Confirmation</span>
+              </div>
+              <div className="flex items-center gap-2 text-gray-700">
+                <CheckCircle className="w-5 h-5 text-green-500" />
+                <span className="text-sm font-medium">Zero Hidden Fees</span>
+              </div>
+              <div className="flex items-center gap-2 text-gray-700">
+                <CheckCircle className="w-5 h-5 text-green-500" />
+                <span className="text-sm font-medium">Best Price Guarantee</span>
+              </div>
+              <div className="flex items-center gap-2 text-gray-700">
+                <CheckCircle className="w-5 h-5 text-green-500" />
+                <span className="text-sm font-medium">Free Cancellation</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Vision-Mission-Goals Timeline */}
+          <div className="md:col-span-2 bg-white rounded-3xl p-6 shadow-lg border border-gray-200">
+            <h2 className="text-2xl font-black text-indigo-900 mb-6">Our DNA</h2>
+            <div className="space-y-4">
+              {timeline.map((item, i) => {
+                const Icon = item.icon;
+                return (
+                  <div key={i} className="flex gap-4">
+                    <div className={`w-12 h-12 ${item.color} rounded-xl flex items-center justify-center flex-shrink-0`}>
+                      <Icon className="w-6 h-6 text-white" />
+                    </div>
+                    <div>
+                      <div className="text-gray-900 font-bold mb-1">{item.phase}</div>
+                      <div className="text-gray-600 text-sm leading-relaxed">{item.desc}</div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+
+        {/* Features Grid - Compact 4 Column */}
+        <div className="grid md:grid-cols-4 gap-4 mb-8">
+          {features.map((feature, i) => {
+            const Icon = feature.icon;
+            return (
+                <div key={i} className="bg-white rounded-2xl p-5 shadow-lg border border-gray-200 hover:shadow-xl transition-all group">
+                <div className={`w-12 h-12 ${feature.color} rounded-xl flex items-center justify-center mb-3 group-hover:scale-110 transition-transform`}>
+                  <Icon className="w-6 h-6 text-white" />
+                </div>
+                <h3 className="text-indigo-900 font-bold mb-2">{feature.title}</h3>
+                <p className="text-gray-600 text-sm">{feature.desc}</p>
+              </div>
+            );
+          })}
+        </div>
+
+        {/* Team Section */}
+        <div className="bg-white rounded-3xl p-6 shadow-lg border border-gray-200 mb-8">
+            <div className="text-center mb-6">
+            <h2 className="text-3xl font-black text-indigo-900 mb-2">The Team Behind SpotMax</h2>
+            <p className="text-gray-700">Meet the innovators building the future of event discovery</p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-4">
+            {teamMembers.map((member, i) => (
+                <div key={i} className="bg-gray-50 rounded-2xl overflow-hidden border border-gray-200 hover:border-gray-300 hover:shadow-lg transition-all group">
+                <div className={`relative h-96 ${member.color} overflow-hidden`}>
+                  {member.image && (
+                    <img 
+                      src={member.image} 
+                      alt={member.name}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                  )}
                   {!member.image && (
                     <div className="absolute inset-0 flex items-center justify-center">
                       <Users className="w-20 h-20 text-white/50" />
                     </div>
                   )}
-                  
-                  {/* Actual Image */}
-                  {member.image && (
-                    <img 
-                      src={member.image} 
-                      alt={member.name}
-                      className="w-full h-full object-cover"
-                    />
-                  )}
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-gray-800 mb-1">{member.name}</h3>
-                  <p className="text-indigo-600 font-medium mb-3">{member.role}</p>
-                  <p className="text-gray-600 mb-4">{member.bio}</p>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                    <div className="absolute bottom-0 left-0 right-0 p-4">
+                    <h3 className="text-white font-bold text-lg">{member.name}</h3>
+                    <p className="text-white/90 text-sm">{member.role}</p>
+                  </div>
                 </div>
               </div>
             ))}
-          </div>
-        </div>
-
-        {/* CTA Section */}
-        <div className="bg-gradient-to-r from-indigo-700 to-purple-600 rounded-2xl shadow-xl p-8 md:p-12 text-center text-white">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Ready to Explore?
-          </h2>
-          <p className="text-lg mb-8 text-indigo-100 max-w-2xl mx-auto">
-            Join thousands of users who trust SpotMax to discover their next unforgettable experience.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a 
-              href="/events"
-              className="px-8 py-3 bg-white text-indigo-700 rounded-lg font-medium hover:bg-gray-100 hover:shadow-lg transform hover:scale-105 transition-all duration-200"
-            >
-              Discover Events
-            </a>
-            <a 
-              href="/venues"
-              className="px-8 py-3 bg-indigo-800 text-white rounded-lg font-medium hover:bg-indigo-900 hover:shadow-lg transform hover:scale-105 transition-all duration-200 border-2 border-white"
-            >
-              Book Venues
-            </a>
           </div>
         </div>
       </div>
