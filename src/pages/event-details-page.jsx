@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams, useNavigate, useLocation, Link } from 'react-router-dom';
+import { useParams, useNavigate, useLocation, Link, Outlet } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
 import { getEventById, getVenueForEvent } from './../utils/data';
 import DetailNotFound from '../components/EventDetails/detail-not-found';
@@ -65,6 +65,8 @@ const EventDetailsPage = () => {
           <PriceMapActions price={event.price} onOpenMap={handleOpenMap} />
 
           <ShareSection url={shareableUrl} />
+          
+          <Outlet/>
         </div>
       </div>
     </div>

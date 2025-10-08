@@ -9,7 +9,9 @@ export const eventsData = [
     venue: "Hollywood Bowl",
     type: "concert",
     price: "$89",
-    image: "https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=800"
+    image: "https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=800",
+    lat: 34.1122,
+    lon: -118.3391
   },
   {
     id: 2,
@@ -21,7 +23,9 @@ export const eventsData = [
     venue: "Moscone Center",
     type: "tech",
     price: "$299",
-    image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800"
+    image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800",
+    lat: 37.7840,
+    lon: -122.4014
   },
   {
     id: 3,
@@ -33,7 +37,9 @@ export const eventsData = [
     venue: "Central Park",
     type: "sports",
     price: "$45",
-    image: "https://images.unsplash.com/photo-1486218119243-13883505764c?w=800"
+    image: "https://images.unsplash.com/photo-1486218119243-13883505764c?w=800",
+    lat: 40.785091,
+    lon: -73.968285
   },
   {
     id: 4,
@@ -45,7 +51,9 @@ export const eventsData = [
     venue: "Vineyard Estates",
     type: "art",
     price: "$65",
-    image: "https://images.unsplash.com/photo-1560717789-0ac7c58ac90a?w=800"
+    image: "https://images.unsplash.com/photo-1560717789-0ac7c58ac90a?w=800",
+    lat: 38.5025,
+    lon: -122.2654
   },
   {
     id: 5,
@@ -57,7 +65,9 @@ export const eventsData = [
     venue: "Convention Center",
     type: "business",
     price: "Free",
-    image: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=800"
+    image: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=800",
+    lat: 30.2711,
+    lon: -97.7437
   },
   {
     id: 6,
@@ -69,7 +79,9 @@ export const eventsData = [
     venue: "Expo Center",
     type: "food",
     price: "$35",
-    image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800"
+    image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800",
+    lat: 45.5857,
+    lon: -122.7069
   }
 ];
 
@@ -104,8 +116,9 @@ export const getVenueForEvent = (id) => {
     city: ev.city,
     address: ev.venue,
     capacity: 5000,
+    lat: ev.lat,
+    lon: ev.lon,
   };
 };
 
-// default export kept for backward compatibility
 export default getEventById;
