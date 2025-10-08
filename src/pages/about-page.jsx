@@ -1,54 +1,64 @@
 import React from 'react';
-import { Sparkles, Users, Target, Heart, Award, Calendar, MapPin, Shield } from 'lucide-react';
+import { Sparkles, Users, Target, Heart, Award, Calendar, MapPin, Shield, Rocket, Eye, Flag, Github, Linkedin, Mail } from 'lucide-react';
 
 const AboutPage = () => {
-  const features = [
+  const visionMissionGoals = [
     {
-      icon: Calendar,
-      title: 'Discover Events',
-      description: 'Browse thousands of events from concerts to conferences, sports to cultural celebrations.'
-    },
-    {
-      icon: MapPin,
-      title: 'Find Venues',
-      description: 'Explore amazing venues across the globe, from intimate theaters to grand stadiums.'
-    },
-    {
-      icon: Shield,
-      title: 'Secure Booking',
-      description: 'Safe and reliable platform ensuring your tickets and information are protected.'
-    },
-    {
-      icon: Award,
-      title: 'Best Experiences',
-      description: 'Curated selection of top-rated events to make every moment unforgettable.'
-    }
-  ];
-
-  const values = [
-    {
-      icon: Heart,
-      title: 'Passion',
-      description: 'We\'re passionate about connecting people with experiences that matter to them.'
-    },
-    {
-      icon: Users,
-      title: 'Community',
-      description: 'Building a vibrant community of event enthusiasts and experience seekers.'
+      icon: Eye,
+      title: 'Our Vision',
+      description: 'To create accessible, ethical, and practical technology that keeps people in sync, fosters unity, and transforms everyday challenges into opportunities.',
+      color: 'from-blue-500 to-indigo-600'
     },
     {
       icon: Target,
-      title: 'Excellence',
-      description: 'Committed to delivering exceptional service and unforgettable moments.'
+      title: 'Our Mission',
+      description: 'UniSync Labs designs seamless, intuitive software by blending creativity with technical excellence, empowering businesses and individuals through innovation, collaboration, and ethical technology',
+      color: 'from-indigo-500 to-purple-600'
+    },
+    {
+      icon: Flag,
+      title: 'Our Goals',
+      description: 'UniSync Labs strives to create reliable, user-friendly, and high-quality software that meets client needs and exceeds expectations. The company values continuous improvement, teamwork, and responsible technology that benefits both people and the environment.',
+      color: 'from-purple-500 to-pink-600'
     }
   ];
 
-  const stats = [
-    { value: '10K+', label: 'Events Listed' },
-    { value: '500+', label: 'Venues' },
-    { value: '50K+', label: 'Happy Users' },
-    { value: '100+', label: 'Cities' }
+  const teamMembers = [
+    {
+      name: 'Earl Kian Bancayrin',
+      role: 'Full Stack Developer',
+      image: '/src/assets/member1.jpg', 
+      bio: 'Passionate about creating seamless user experiences and scalable solutions.',
+      socials: {
+        github: '#',
+        linkedin: '#',
+        email: 'member1@unisync.com'
+      }
+    },
+    {
+      name: 'Cydrick Amparan',
+      role: 'UI/UX Designer & Developer',
+      image: '/src/assets/member2.jpg', 
+      bio: 'Combines design thinking with technical expertise to craft beautiful interfaces.',
+      socials: {
+        github: '#',
+        linkedin: '#',
+        email: 'member2@unisync.com'
+      }
+    },
+    {
+      name: 'Jenson Canones',
+      role: 'Frontend Developer',
+      image: '/src/assets/member3.jpg', 
+      bio: 'Specializes in creating responsive user interfaces and enhancing the overall user experience.',
+      socials: {
+        github: '#',
+        linkedin: '#',
+        email: 'member3@unisync.com'
+      }
+    }
   ];
+
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-white to-purple-50 pt-20">
@@ -70,89 +80,108 @@ const AboutPage = () => {
           </p>
         </div>
 
-        {/* Stats Section */}
-        <div className="mb-16">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {stats.map((stat, index) => (
-              <div 
-                key={index}
-                className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-6 text-center border border-gray-100 group"
-              >
-                <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-indigo-700 to-purple-600 bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-transform duration-300">
-                  {stat.value}
-                </div>
-                <div className="text-gray-600 font-medium">
-                  {stat.label}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Mission Section */}
+        {/* UniSync Description Section */}
         <div className="mb-16 bg-white rounded-2xl shadow-lg p-8 md:p-12 border border-gray-100">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6 text-center">
-              Our Mission
+              What is UniSync?
             </h2>
             <p className="text-lg text-gray-600 text-center leading-relaxed mb-6">
-              At SpotMax, we're on a mission to transform how people discover and experience live events. 
-              We believe that life's most memorable moments happen when we come together to celebrate, 
-              learn, and be inspired.
+              UniSync Labs is a software development company dedicated to creating innovative and
+              user-friendly solutions. We bring together a team of skilled individuals with diverse backgrounds,
+              working collaboratively to design and deliver software that is both reliable and seamless. At UniSync
+              Labs, every project is an opportunity to grow, improve, and make a meaningful impact on the users we
+              serve.
             </p>
             <p className="text-lg text-gray-600 text-center leading-relaxed">
-              Whether you're seeking the thrill of a concert, the excitement of a sports event, 
-              the knowledge from a conference, or the beauty of cultural performances, SpotMax 
-              is here to connect you with experiences that enrich your life.
+              UniSync Labs stands for teamwork, coordination, and innovation. The company values collaboration and 
+              continuous learning to ensure smooth workflows and high-quality results. Its focus on experimentation 
+              and improvement helps drive creativity and technical growth. UniSync Labs develops user-friendly and 
+              efficient software tailored to specific needs. The company's mission is to deliver excellent 
+              solutions while helping its team and products grow together.
             </p>
           </div>
         </div>
 
-        {/* Features Section */}
+        {/* Vision, Mission & Goals Section */}
         <div className="mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-8 text-center">
-            What We Offer
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
+            Our Purpose & Direction
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {features.map((feature, index) => (
-              <div 
-                key={index}
-                className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-6 border border-gray-100 group"
-              >
-                <div className="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-indigo-200 group-hover:scale-110 transition-all duration-300">
-                  <feature.icon className="w-6 h-6 text-indigo-700" />
+          <div className="grid md:grid-cols-3 gap-8">
+            {visionMissionGoals.map((item, index) => {
+              const IconComponent = item.icon;
+              return (
+                <div key={index} className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+                  <div className={`w-16 h-16 bg-gradient-to-r ${item.color} rounded-lg flex items-center justify-center mb-4`}>
+                    <IconComponent className="w-8 h-8 text-white" />
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-800 mb-3">{item.title}</h3>
+                  <p className="text-gray-600 leading-relaxed">{item.description}</p>
                 </div>
-                <h3 className="text-xl font-bold text-gray-800 mb-2">
-                  {feature.title}
-                </h3>
-                <p className="text-gray-600">
-                  {feature.description}
-                </p>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
 
-        {/* Values Section */}
+        {/* Development Team Section */}
         <div className="mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-8 text-center">
-            Our Values
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-4">
+            Meet Our Development Team
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            {values.map((value, index) => (
-              <div 
-                key={index}
-                className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-8 border border-gray-100 text-center group"
-              >
-                <div className="w-16 h-16 bg-gradient-to-br from-indigo-100 to-purple-100 rounded-full flex items-center justify-center mb-4 mx-auto group-hover:scale-110 transition-transform duration-300">
-                  <value.icon className="w-8 h-8 text-indigo-700" />
+          <p className="text-lg text-gray-600 text-center mb-12 max-w-3xl mx-auto">
+            The brilliant minds behind UniSync, dedicated to creating the best quality management experience.
+          </p>
+          
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {teamMembers.map((member, index) => (
+              <div key={index} className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:scale-105">
+                <div className="relative w-full h-64 bg-gradient-to-br from-indigo-400 to-purple-500 overflow-hidden">
+                  {/* Fallback icon (shown when no image) */}
+                  {!member.image && (
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <Users className="w-20 h-20 text-white/50" />
+                    </div>
+                  )}
+                  
+                  {/* Actual Image */}
+                  {member.image && (
+                    <img 
+                      src={member.image} 
+                      alt={member.name}
+                      className="w-full h-full object-cover"
+                    />
+                  )}
                 </div>
-                <h3 className="text-xl font-bold text-gray-800 mb-3">
-                  {value.title}
-                </h3>
-                <p className="text-gray-600">
-                  {value.description}
-                </p>
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-gray-800 mb-1">{member.name}</h3>
+                  <p className="text-indigo-600 font-medium mb-3">{member.role}</p>
+                  <p className="text-gray-600 mb-4">{member.bio}</p>
+                  
+                  <div className="flex gap-3">
+                    <a 
+                      href={member.socials.github}
+                      className="p-2 bg-gray-100 rounded-lg hover:bg-gray-200 transition-colors"
+                      aria-label="GitHub"
+                    >
+                      <Github className="w-5 h-5 text-gray-700" />
+                    </a>
+                    <a 
+                      href={member.socials.linkedin}
+                      className="p-2 bg-gray-100 rounded-lg hover:bg-gray-200 transition-colors"
+                      aria-label="LinkedIn"
+                    >
+                      <Linkedin className="w-5 h-5 text-gray-700" />
+                    </a>
+                    <a 
+                      href={`mailto:${member.socials.email}`}
+                      className="p-2 bg-gray-100 rounded-lg hover:bg-gray-200 transition-colors"
+                      aria-label="Email"
+                    >
+                      <Mail className="w-5 h-5 text-gray-700" />
+                    </a>
+                  </div>
+                </div>
               </div>
             ))}
           </div>
@@ -171,13 +200,13 @@ const AboutPage = () => {
               href="/events"
               className="px-8 py-3 bg-white text-indigo-700 rounded-lg font-medium hover:bg-gray-100 hover:shadow-lg transform hover:scale-105 transition-all duration-200"
             >
-              Browse Events
+              Discover Events
             </a>
             <a 
               href="/venues"
               className="px-8 py-3 bg-indigo-800 text-white rounded-lg font-medium hover:bg-indigo-900 hover:shadow-lg transform hover:scale-105 transition-all duration-200 border-2 border-white"
             >
-              Explore Venues
+              Book Venues
             </a>
           </div>
         </div>
