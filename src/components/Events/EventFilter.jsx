@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { X, Search, MapPin, CalendarDays, Tag, ChevronDown, Trash2, Filter } from "lucide-react";
-
+import { eventTypes } from "../../utils/data";
 const EventFilter = ({
   searchDraft,
   setSearchDraft,
@@ -122,12 +122,11 @@ const EventFilter = ({
                       className="w-full pl-10 rounded-md border border-gray-200 shadow-sm focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100 text-sm h-10 appearance-none"
                     >
                       <option value="">All Types</option>
-                      <option value="concert">Concert</option>
-                      <option value="tech">Tech</option>
-                      <option value="sports">Sports</option>
-                      <option value="art">Art & Culture</option>
-                      <option value="business">Business</option>
-                      <option value="food">Food & Drink</option>
+                      {eventTypes.map((t) => (
+                        <option key={t} value={t}>
+                          {t.charAt(0).toUpperCase() + t.slice(1)}
+                        </option>
+                      ))}
                     </select>
                     <ChevronDown className="absolute right-3 top-3 w-4 h-4 text-gray-400 pointer-events-none" />
                   </div>
