@@ -1,176 +1,190 @@
 export const eventsData = [
   {
     id: 1,
-    title: "Summer Music Festival 2025",
-    description: "Join us for an unforgettable weekend of live music featuring top artists from around the world.",
-    date: "2025-07-15",
-    time: "6:00 PM",
-    city: "Los Angeles",
-    venue: "Hollywood Bowl",
-    type: "concert",
-    price: "$89",
-    image: "https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=800"
+    title: "Tokyo Cherry Blossom Festival 2025",
+    description: "Experience Japan’s famous cherry blossoms with live performances, food stalls, and cultural exhibits in Ueno Park.",
+    date: "2025-04-05",
+    time: "9:00 AM",
+    city: "Tokyo",
+    venue: "Ueno Park",
+    type: "festival",
+    price: "Free",
+    image: "https://images.pexels.com/photos/356269/pexels-photo-356269.jpeg?auto=compress&cs=tinysrgb&w=800",
+    lat: 35.7156,
+    lon: 139.7745
   },
   {
     id: 2,
-    title: "Tech Conference 2025",
-    description: "The biggest tech conference of the year featuring AI, blockchain, and future tech innovations.",
-    date: "2025-09-20",
-    time: "9:00 AM",
-    city: "San Francisco",
-    venue: "Moscone Center",
-    type: "tech",
-    price: "$299",
-    image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800"
+    title: "Paris Fashion Week 2025",
+    description: "Witness the world’s top designers unveil their collections at the most prestigious fashion event in Paris.",
+    date: "2025-09-25",
+    time: "10:00 AM",
+    city: "Paris",
+    venue: "Carrousel du Louvre",
+    type: "fashion",
+    price: "€500",
+    image: "https://images.unsplash.com/photo-1521334884684-d80222895322?auto=format&fit=crop&w=800&q=80",
+    lat: 48.8610,
+    lon: 2.3358
   },
   {
     id: 3,
-    title: "Marathon Championship",
-    description: "Annual city marathon with participants from all over the country. Run for charity and personal achievement.",
-    date: "2025-05-10",
-    time: "7:00 AM",
+    title: "New York Tech Expo 2025",
+    description: "Explore cutting-edge innovations in AI, robotics, and blockchain at one of the biggest tech expos in the world.",
+    date: "2025-06-18",
+    time: "9:00 AM",
     city: "New York",
-    venue: "Central Park",
-    type: "sports",
-    price: "$45",
-    image: "https://images.unsplash.com/photo-1486218119243-13883505764c?w=800"
+    venue: "Javits Center",
+    type: "tech",
+    price: "$250",
+    image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=800&q=80",
+    lat: 40.7578,
+    lon: -74.0021
   },
   {
     id: 4,
-    title: "Art & Wine Festival",
-    description: "Experience local artists and wineries in this beautiful outdoor festival celebrating creativity.",
-    date: "2025-08-12",
-    time: "4:00 PM",
-    city: "Napa Valley",
-    venue: "Vineyard Estates",
-    type: "art",
-    price: "$65",
-    image: "https://images.unsplash.com/photo-1560717789-0ac7c58ac90a?w=800"
+    title: "London Marathon 2025",
+    description: "Join thousands of runners from around the world for one of the most iconic marathons through London’s landmarks.",
+    date: "2025-04-27",
+    time: "8:30 AM",
+    city: "London",
+    venue: "The Mall, Westminster",
+    type: "sports",
+    price: "£120",
+    image: "https://images.unsplash.com/photo-1552674605-db6ffd4facb5?auto=format&fit=crop&w=800&q=80",
+    lat: 51.5014,
+    lon: -0.1419
   },
   {
     id: 5,
-    title: "Startup Pitch Competition",
-    description: "Watch innovative startups pitch their ideas to top investors for funding opportunities.",
-    date: "2025-06-05",
-    time: "2:00 PM",
-    city: "Austin",
-    venue: "Convention Center",
-    type: "business",
-    price: "Free",
-    image: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=800"
+    title: "Rio Carnival 2025",
+    description: "Dance to the rhythm of samba in the world’s biggest carnival celebration filled with color, music, and parades.",
+    date: "2025-02-28",
+    time: "5:00 PM",
+    city: "Rio de Janeiro",
+    venue: "Sambadrome Marquês de Sapucaí",
+    type: "festival",
+    price: "$100",
+    image: "https://images.unsplash.com/photo-1542060748-10c28b62716f?auto=format&fit=crop&w=800&q=80",
+    lat: -22.9068,
+    lon: -43.1729
   },
   {
     id: 6,
-    title: "Food & Beer Expo",
-    description: "Taste the best local craft beers and gourmet food from top chefs in the region.",
-    date: "2025-10-18",
-    time: "12:00 PM",
-    city: "Portland",
-    venue: "Expo Center",
-    type: "food",
-    price: "$35",
-    image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800"
-  }
+    title: "Sydney Vivid Festival 2025",
+    description: "Enjoy spectacular light shows, live music, and art installations along Sydney Harbour and the Opera House.",
+    date: "2025-05-23",
+    time: "6:00 PM",
+    city: "Sydney",
+    venue: "Sydney Opera House",
+    type: "art",
+    price: "AUD 80",
+    image: "https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=800&q=80",
+    lat: -33.8568,
+    lon: 151.2153
+  },
 ];
 
 export const venuesData = [
   {
     id: 1,
-    name: "Hollywood Bowl",
-    address: "2301 N Highland Ave",
-    city: "Los Angeles",
-    type: "Concert Hall",
-    capacity: 17500,
+    name: "Ueno Park",
+    address: "Uenokoen, Taito City",
+    city: "Tokyo",
+    type: "Public Park",
+    capacity: 20000,
     rating: 4.8,
-    description: "An iconic outdoor amphitheater known for its distinctive band shell and stunning acoustics. The Hollywood Bowl has been the summer home of the Los Angeles Philharmonic since 1922.",
-    image: "https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=800",
-    amenities: ["Parking", "Food & Beverages", "Accessible Seating", "VIP Lounges"],
-    yearEstablished: 1922
+    description: "A historical park in central Tokyo famous for its cherry blossoms and cultural landmarks.",
+     image: "https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?q=80&w=800",
+    amenities: ["Rest Areas", "Gardens", "Food Stalls", "Museums Nearby"],
+    yearEstablished: 1873
   },
   {
     id: 2,
-    name: "Moscone Center",
-    address: "747 Howard St",
-    city: "San Francisco",
-    type: "Conference Center",
-    capacity: 22000,
+    name: "Carrousel du Louvre",
+    address: "99 Rue de Rivoli",
+    city: "Paris",
+    type: "Exhibition Hall",
+    capacity: 10000,
     rating: 4.6,
-    description: "The largest convention and exhibition complex in San Francisco, hosting major tech conferences, trade shows, and corporate events. State-of-the-art facilities with modern technology.",
-    image: "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=800",
-    amenities: ["WiFi", "Exhibition Halls", "Meeting Rooms", "Catering Services"],
-    yearEstablished: 1981
+    description: "A prestigious underground venue beneath the Louvre Museum hosting luxury fashion events and exhibitions.",
+    image: "https://images.unsplash.com/photo-1521334884684-d80222895322?auto=format&fit=crop&w=800&q=80",
+    amenities: ["Air Conditioning", "WiFi", "Catering", "Security"],
+    yearEstablished: 1993
   },
   {
     id: 3,
-    name: "Central Park",
-    address: "Central Park West & 5th Ave",
+    name: "Javits Center",
+    address: "429 11th Ave",
     city: "New York",
-    type: "Stadium",
-    capacity: 50000,
-    rating: 4.9,
-    description: "An urban park in Manhattan, offering 843 acres of scenic landscapes. Perfect venue for marathons, outdoor concerts, and large-scale public events in the heart of NYC.",
-    image: "https://images.unsplash.com/photo-1486218119243-13883505764c?w=800",
-    amenities: ["Open Air", "Scenic Routes", "Multiple Entry Points", "Public Facilities"],
-    yearEstablished: 1857
+    type: "Convention Center",
+    capacity: 30000,
+    rating: 4.7,
+    description: "New York’s premier venue for large-scale conventions, expos, and trade shows.",
+    image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=800&q=80",
+    amenities: ["WiFi", "Cafeteria", "Exhibit Halls", "Accessibility"],
+    yearEstablished: 1986
   },
   {
     id: 4,
-    name: "Vineyard Estates",
-    address: "1234 Silverado Trail",
-    city: "Napa Valley",
-    type: "Arena",
-    capacity: 3000,
-    rating: 4.7,
-    description: "A luxurious estate venue nestled among rolling vineyards, perfect for wine festivals, art exhibitions, and elegant outdoor gatherings with breathtaking valley views.",
-    image: "https://images.unsplash.com/photo-1560717789-0ac7c58ac90a?w=800",
-    amenities: ["Wine Tasting", "Outdoor Space", "Gourmet Catering", "Parking"],
-    yearEstablished: 1995
+    name: "The Mall, Westminster",
+    address: "Westminster",
+    city: "London",
+    type: "Public Road",
+    capacity: 50000,
+    rating: 4.9,
+    description: "An iconic road in central London used for major parades, marathons, and royal ceremonies.",
+    image: "https://images.unsplash.com/photo-1552674605-db6ffd4facb5?auto=format&fit=crop&w=800&q=80",
+    amenities: ["Public Transport", "Restrooms Nearby", "First Aid", "Security"],
+    yearEstablished: 1911
   },
   {
     id: 5,
-    name: "Convention Center",
-    address: "500 E Cesar Chavez St",
-    city: "Austin",
-    type: "Conference Center",
-    capacity: 12000,
-    rating: 4.5,
-    description: "A premier convention facility in downtown Austin featuring flexible meeting spaces, modern technology infrastructure, and convenient access to the city's vibrant entertainment district.",
-    image: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=800",
-    amenities: ["WiFi", "AV Equipment", "Breakout Rooms", "On-site Dining"],
-    yearEstablished: 1992
+    name: "Sambadrome Marquês de Sapucaí",
+    address: "R. Marquês de Sapucaí",
+    city: "Rio de Janeiro",
+    type: "Parade Venue",
+    capacity: 90000,
+    rating: 4.8,
+    description: "A world-famous venue for Rio Carnival’s samba parades and cultural performances.",
+    image: "https://images.unsplash.com/photo-1542060748-10c28b62716f?auto=format&fit=crop&w=800&q=80",
+    amenities: ["Seating", "Food Vendors", "Restrooms", "Security"],
+    yearEstablished: 1984
   },
   {
     id: 6,
-    name: "Expo Center",
-    address: "2060 N Marine Dr",
-    city: "Portland",
-    type: "Conference Center",
-    capacity: 8000,
-    rating: 4.4,
-    description: "Portland's premier exposition facility featuring versatile spaces for trade shows, food festivals, and community events. Modern amenities with easy access to downtown.",
-    image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800",
-    amenities: ["Parking", "Loading Docks", "Kitchen Facilities", "Outdoor Space"],
-    yearEstablished: 2000
+    name: "Sydney Opera House",
+    address: "Bennelong Point",
+    city: "Sydney",
+    type: "Cultural Venue",
+    capacity: 5700,
+    rating: 4.9,
+    description: "An iconic Australian performing arts venue hosting concerts, light shows, and major cultural festivals.",
+    image: "https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=800&q=80",
+    amenities: ["Restaurants", "Tours", "WiFi", "Accessibility"],
+    yearEstablished: 1973
   },
-
 ];
 
 export const eventTypes = [
-  "concert",
+  "festival",
+  "fashion",
   "tech",
   "sports",
   "art",
-  "business",
-  "food"
+  "food",
+  "business"
 ];
 
 export const cities = [
-  "Los Angeles",
-  "San Francisco",
+  "Tokyo",
+  "Paris",
   "New York",
-  "Napa Valley",
-  "Austin",
-  "Portland"
+  "London",
+  "Rio de Janeiro",
+  "Sydney",
+  "Cape Town",
+  "Dubai"
 ];
 
 export const getEventById = (id) => {
@@ -186,6 +200,8 @@ export const getVenueForEvent = (id) => {
     city: ev.city,
     address: ev.venue,
     capacity: 5000,
+    lat: ev.lat,
+    lon: ev.lon,
   };
 };
 
@@ -199,5 +215,4 @@ export const getEventsForVenue = (venueId) => {
   return eventsData.filter((e) => e.venueId === num);
 };
 
-// default export kept for backward compatibility
 export default getEventById;
