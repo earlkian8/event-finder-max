@@ -2,39 +2,6 @@ import React from 'react';
 import { Sparkles, Users, Target, Heart, Award, Calendar, MapPin, Shield, Rocket, Eye, Flag, TrendingUp, Zap, CheckCircle, Globe, Clock, Star, MessageCircle } from 'lucide-react';
 
 const AboutPage = () => {
-  const stats = [
-    { value: '10K+', label: 'Active Users', icon: Users },
-    { value: '500+', label: 'Events Listed', icon: Calendar },
-    { value: '200+', label: 'Verified Venues', icon: MapPin },
-    { value: '98%', label: 'Satisfaction', icon: Star }
-  ];
-
-  const features = [
-    {
-      icon: Shield,
-      title: 'Bank-Level Security',
-      desc: 'Military-grade encryption protects every transaction',
-      color: 'bg-blue-500'
-    },
-    {
-      icon: Zap,
-      title: 'Instant Booking',
-      desc: 'Confirm your spot in under 60 seconds',
-      color: 'bg-purple-500'
-    },
-    {
-      icon: CheckCircle,
-      title: 'Verified Quality',
-      desc: 'Every venue manually reviewed by our team',
-      color: 'bg-green-500'
-    },
-    {
-      icon: MessageCircle,
-      title: '24/7 Support',
-      desc: 'Real humans ready to help anytime',
-      color: 'bg-pink-500'
-    }
-  ];
 
   const teamMembers = [
     {
@@ -82,24 +49,9 @@ const AboutPage = () => {
             <p className="text-xl text-gray-700 max-w-3xl mx-auto mb-6">
               Discover, book, and experience the world's best events and venues—all in one powerful platform
             </p>
-
-            {/* Stats Grid */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
-              {stats.map((stat, i) => {
-                const Icon = stat.icon;
-                return (
-                  <div key={i} className="bg-white rounded-2xl p-4 hover:shadow-lg transition-all border border-gray-200">
-                    <Icon className="w-6 h-6 text-indigo-600 mx-auto mb-2" />
-                    <div className="text-3xl font-black text-indigo-900">{stat.value}</div>
-                    <div className="text-sm text-gray-600">{stat.label}</div>
-                  </div>
-                );
-              })}
-            </div>
           </div>
         </div>
-
-        {/* Two Column Layout - About + Timeline */}
+        
         <div className="grid md:grid-cols-5 gap-6 mb-8">
           {/* What is SpotMax */}
           <div className="md:col-span-3 bg-white rounded-3xl p-6 shadow-lg border border-gray-200">
@@ -115,26 +67,6 @@ const AboutPage = () => {
             <p className="text-gray-600 leading-relaxed">
               Built on cutting-edge technology with a user-first philosophy, SpotMax combines powerful search, real-time availability, secure payments, and verified listings. We're not just a booking platform—we're your trusted companion for creating unforgettable memories.
             </p>
-            
-            {/* Quick Features */}
-            <div className="grid grid-cols-2 gap-3 mt-6">
-              <div className="flex items-center gap-2 text-gray-700">
-                <CheckCircle className="w-5 h-5 text-green-500" />
-                <span className="text-sm font-medium">Instant Confirmation</span>
-              </div>
-              <div className="flex items-center gap-2 text-gray-700">
-                <CheckCircle className="w-5 h-5 text-green-500" />
-                <span className="text-sm font-medium">Zero Hidden Fees</span>
-              </div>
-              <div className="flex items-center gap-2 text-gray-700">
-                <CheckCircle className="w-5 h-5 text-green-500" />
-                <span className="text-sm font-medium">Best Price Guarantee</span>
-              </div>
-              <div className="flex items-center gap-2 text-gray-700">
-                <CheckCircle className="w-5 h-5 text-green-500" />
-                <span className="text-sm font-medium">Free Cancellation</span>
-              </div>
-            </div>
           </div>
 
           {/* Vision-Mission-Goals Timeline */}
@@ -157,22 +89,6 @@ const AboutPage = () => {
               })}
             </div>
           </div>
-        </div>
-
-        {/* Features Grid - Compact 4 Column */}
-        <div className="grid md:grid-cols-4 gap-4 mb-8">
-          {features.map((feature, i) => {
-            const Icon = feature.icon;
-            return (
-                <div key={i} className="bg-white rounded-2xl p-5 shadow-lg border border-gray-200 hover:shadow-xl transition-all group">
-                <div className={`w-12 h-12 ${feature.color} rounded-xl flex items-center justify-center mb-3 group-hover:scale-110 transition-transform`}>
-                  <Icon className="w-6 h-6 text-white" />
-                </div>
-                <h3 className="text-indigo-900 font-bold mb-2">{feature.title}</h3>
-                <p className="text-gray-600 text-sm">{feature.desc}</p>
-              </div>
-            );
-          })}
         </div>
 
         {/* Team Section */}
