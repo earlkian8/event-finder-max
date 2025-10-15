@@ -9,7 +9,6 @@ import { useSearchParams } from 'react-router-dom';
 
 const EventsPage = () => {
 
-  // Inline of useEventFilters
   const [searchParams, setSearchParams] = useSearchParams();
 
   const [search, setSearch] = useState(searchParams.get('q') || '');
