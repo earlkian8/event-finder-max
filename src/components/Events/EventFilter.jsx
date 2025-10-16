@@ -79,11 +79,11 @@ const EventFilter = ({
         </button>
 
         {/* Enhanced Filter Component */}
-        <div className="relative">
+        <div className="relative w-full md:w-auto">
           {/* Filter Toggle Button */}
           <button
             onClick={() => setShowFilters(!showFilters)}
-            className="flex items-center gap-2 px-6 py-3 bg-indigo-50 text-indigo-700 rounded-lg font-medium hover:bg-indigo-100 hover:shadow-lg transform hover:scale-105 transition-all duration-200 w-full md:w-auto"
+            className="flex gap-2 px-6 py-3 bg-indigo-50 text-indigo-700 rounded-lg font-medium hover:bg-indigo-100 hover:shadow-lg transform hover:scale-105 transition-all duration-200 w-full md:w-auto justify-center items-center"
           >
             <Filter className="w-5 h-5" />
             <span>Filters</span>
