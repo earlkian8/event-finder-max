@@ -92,7 +92,7 @@ const AboutPage = () => {
         </div>
 
         {/* Team Section */}
-        <div className="bg-white rounded-3xl p-6 shadow-lg border border-gray-200 mb-8">
+        {/* <div className="bg-white rounded-3xl p-6 shadow-lg border border-gray-200 mb-8">
             <div className="text-center mb-6">
             <h2 className="text-3xl font-black text-indigo-900 mb-2">The Team Behind SpotMax</h2>
             <p className="text-gray-700">Meet the innovators building the future of event discovery</p>
@@ -123,7 +123,7 @@ const AboutPage = () => {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
